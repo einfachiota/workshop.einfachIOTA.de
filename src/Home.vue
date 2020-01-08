@@ -35,9 +35,9 @@
       </div>
       <h3>Javascript IOTA Workshop</h3>
       <p>
-        Der Javascript IOTA Workshop hilft Entwicklern, und jene, die es werden wollen, bei dem Einstieg in den Tangle.
+        Der Javascript IOTA Workshop hilft Entwicklern, und jenen, die es werden wollen, bei dem Einstieg in den Tangle.
       </p>
-      <p>Mit einer Schritt für Schritt anleitung und viele nützliche Tipps ist dieser Workshop der Perfekt <Startpunkt class="s"></Startpunkt></p>
+      <p>Mit einer Schritt für Schritt Anleitung und viele nützliche Tipps ist dieser Workshop der perfekte <Startpunkt class="s"></Startpunkt></p>
       <div class="thumbnails">
         <div class="box-card" v-for="(slideshow, index) in slideshows" :key="index">
           <router-link :to="slideshow.infos.path" @click.native="click">
