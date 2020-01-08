@@ -16,11 +16,11 @@
       ></iframe>
       <h3>IOTA Grundlagen</h3>
       <div class="thumbnails">
-        <div class="box-card" v-for="(slideshow, index) in introduction" :key="index">
-          <router-link :to="slideshow.infos.path" @click.native="click">
+        <div class="box-card" v-for="(introduction, index) in introductions" :key="index">
+          <router-link :to="introduction.infos.path" @click.native="click">
             <div class="embedded-slideshow-container">
               <component
-                :is="slideshow"
+                :is="introduction"
                 :embedded="true"
                 :keyboardNavigation="false"
                 :mouseNavigation="false"
@@ -28,8 +28,8 @@
             </div>
           </router-link>
           <div class="caption">
-            <h3>{{slideshow.infos.title}}</h3>
-            <p class="thumbnail-description">{{slideshow.infos.description}}</p>
+            <h3>{{introduction.infos.title}}</h3>
+            <p class="thumbnail-description">{{introduction.infos.description}}</p>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ import slideshows from 'slideshows/slideshows'
 export default {
   data: function () {
     return {
-      introduction: slideshows.introduction,
+      introductions: slideshows.introduction,
       slideshows: slideshows.list
     }
   },

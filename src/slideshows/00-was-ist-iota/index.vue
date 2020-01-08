@@ -1,20 +1,21 @@
 <template lang='pug'>
-#MyFirstSlideshow
-  .eg-slideshow
-    slide
-      h1 Hi there !
-      h4 This is your first slideshow !
-
-    slide(enter='bounceInRight' leave='fadeOut')
-      h3 Hey modify me !
-      p.
-        Come on modify me ! If you are running the development server,
-        you will see the changes take effect immediately
-
-    slide(enter='fadeIn')
-      h3 Want cool effects?
-      p.
-        Code your own, or try stealing for the other slideshows !
+<div id="WasIstIOTA">
+    <div class="eg-slideshow">
+      <slide>
+          <h1>Was ist IOTA?</h1>
+          <h4>Die Grundlagen einfach erklärt!</h4>
+      </slide>
+      <slide enter="bounceInRight" leave="fadeOut">
+          <h3>Hey modify me !</h3>
+          <p>Come on modify me ! If you are running the development server, you will see the changes take effect immediately
+          </p>
+      </slide>
+      <slide enter="fadeIn">
+          <h3>Want cool effects?</h3>
+          <p>Code your own, or try stealing for the other slideshows !</p>
+      </slide>
+    </div>
+</div>
 </template>
 
 <script>
@@ -23,9 +24,9 @@ export default {
   mixins: [ eagle.slideshow ],
   infos: {
     // These infos appear on the home page, below the slideshow's thumbnail
-    title: 'Your First Slideshow',
-    description: 'A boilerplate to get you started',
-    path: 'your-first-slideshow'
+    title: 'Was ist IOTA?',
+    description: 'Die Grundlagen einfach erklärt.',
+    path: 'was-ist-iota'
   }
 }
 </script>

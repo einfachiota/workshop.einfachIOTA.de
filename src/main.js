@@ -20,6 +20,12 @@ slideshows.list.forEach(function (slideshow) {
     component: slideshow
   })
 })
+slideshows.introduction.forEach(function (slideshow) {
+  routes.push({
+    path: '/' + slideshow.infos.path,
+    component: slideshow
+  })
+})
 routes.push({ path: '*', component: Home })
 
 routes.push({
